@@ -1,0 +1,81 @@
+header div {
+	width: 70%;
+	height: 150px;
+	background-color: #16a085;
+	position: relative;
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
+
+hr {
+	width: 70%;
+}
+
+header div span {
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+	color: #ecf0f1;
+	left: 25px;
+	top: 75px;
+	position: absolute;
+}
+
+.welcome-text {
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 20%;
+	font-size: 1.35em;
+}
+
+form {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	margin:auto;
+	position:relative;
+	width:450px;
+	height:160px;
+	font-family: 'Lato', Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	/*font-style: italic;*/
+	line-height: 20px;
+	/*font-weight: bold;*/
+	color: darkslategray;
+	text-decoration: none;
+	border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-quote{
+	width: 300px;
+	height: 50px;
+	/*line-height: 15px;*/
+	margin-bottom: 5px;
+	resize: none;
+
+}
+
+button[type = "submit"] {
+	float: right;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.quote-list{
+	margin-left: 15%;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.75em;
+}
+
+.quote-list span, .quote-list div {
+	display: inline;
+}
+
+.rating-button {
+	font-size: .75em;
+	border-radius: 3px;
+	margin-left: 5px;
+	padding: 2px;
+}
