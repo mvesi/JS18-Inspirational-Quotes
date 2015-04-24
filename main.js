@@ -109,7 +109,7 @@ $(".quote-entry").on("submit",function(event){
 
     sortButton.show();
 
-    randomizeButton.show();
+    // randomizeButton.show();  -  Functionality does not work properly yet
 
     quoteArray.push(currentQuote);
 
