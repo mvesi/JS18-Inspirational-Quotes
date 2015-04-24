@@ -13,33 +13,43 @@
       <span>Quotr</span>
     </div>
   </header>
-  <p class="welcome-text">Welcome to Quotr!  This is the premiere place to submit, rate and review quotes.  Add yours today!</p>
+  <p class="welcome-text">Welcome to Quotr!  This is the premiere place to submit and rate quotes.  Add yours today!</p>
 
   <br>
     <form class="quote-entry">
     <br>
-    Quote:  <textarea type="text" name="quote" class="form-quote"></textarea>
+      Quote:  <textarea type="text" name="quote" class="form-quote"></textarea>
       <br>
-      <!-- Quote:  <input type="text" name="quote" class="form-quote">
-      <br> -->
       Author:  <input type="text" name="author" class="form-author">
+      <br>
+      Delete Password:  <input type="text" name="password" class="form-password" placeholder="You will need this to delete your entry">
       <br>
       <button type="submit">Submit</button>
     </form>
-  <br>  
+  <br>
+  <button class="sort-button">Sort these quotes by rating</button> 
+  <button class="random-button">Display a random quote</button> 
   <hr>
-  <ol class="quote-list">
-    <!-- <li><span>Quote:  "</span><div class="listed-quote"></div><span>"</span>
-        <br>
-        <span>Author:  </span><div class="listed-author"></div>
-        <br>
-        <span>Rating:  </span><div class="listed-rating"></div>
-        <br>
-        <br>
-    </li> -->
-
-  </ol>
-    
+  <div id="random-quote-container"><button class="close-random-quote">Close</button></div>
+  <div id="templates">
+<!--     <div id="random-quote-container"></div> -->
+    <ol>
+      <li id="tpl-quote">
+          <span>Quote:  "</span><div class="quote-text"></div><span>"</span>
+          <br>
+          <span>Author:  </span><div class="quote-author"></div>
+          <br>
+          <!-- <span>Rating Array:  "</span><div class="rating-array"></div><span>"</span>
+          <br> -->
+          <span>Average Rating:  </span><div class="quote-rating"></div><button class="rating-button"></button><button class="delete-button"></button>
+          <br>
+          <br>
+      </li>
+    </ol>
+   </div> 
+    <ol class="quote-list">
+      <!-- this is where new quotes will be listed -->
+    </ol>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script src="main.js"></script>

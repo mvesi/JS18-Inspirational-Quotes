@@ -23,8 +23,8 @@ header div span {
 
 .welcome-text {
 	font-family: 'Josefin Sans', sans-serif;
-	margin-left: 20%;
 	font-size: 1.35em;
+	text-align: center;
 }
 
 form {
@@ -32,12 +32,10 @@ form {
 	margin:auto;
 	position:relative;
 	width:450px;
-	height:160px;
-	font-family: 'Lato', Tahoma, Geneva, sans-serif;
+	height:190px;
+	font-family: 'Josefin Sans', Tahoma, Geneva, sans-serif;
 	font-size: 14px;
-	/*font-style: italic;*/
 	line-height: 20px;
-	/*font-weight: bold;*/
 	color: darkslategray;
 	text-decoration: none;
 	border-radius: 10px;
@@ -48,19 +46,62 @@ form {
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.form-quote{
+.form-quote {
 	width: 300px;
 	height: 50px;
-	/*line-height: 15px;*/
 	margin-bottom: 5px;
 	resize: none;
 
+}
+
+.form-author {
+	width: 298px;
+}
+
+.form-password {
+	margin-top: 10px;
+	width: 245px;
 }
 
 button[type = "submit"] {
 	float: right;
 	margin-top: 20px;
 	border-radius: 5px;
+}
+
+.sort-button {
+	margin-left: 200px;
+	border-radius: 5px;
+	font-size: .75em;
+	font-family: 'Josefin Sans', Tahoma, Geneva, sans-serif;
+	display: none;
+}
+
+.random-button {
+	margin-right: 200px;
+	float: right;
+	border-radius: 5px;
+	font-size: .75em;
+	font-family: 'Josefin Sans', Tahoma, Geneva, sans-serif;
+	display: none;
+}
+
+#random-quote-container {
+	width: 60%;
+	height: 150px;
+	border-radius: 5px;
+	background-color: #9b59b6;
+	margin-left: 5%;
+	display: none;
+	padding:150px 0 150px 150px;
+
+}
+
+.close-random-quote {
+	margin-left: 200px;
+	border-radius: 5px;
+	font-size: .75em;
+	font-family: 'Josefin Sans', Tahoma, Geneva, sans-serif;
 }
 
 .quote-list{
@@ -73,9 +114,13 @@ button[type = "submit"] {
 	display: inline;
 }
 
-.rating-button {
+.rating-button, .delete-button{
 	font-size: .75em;
 	border-radius: 3px;
 	margin-left: 5px;
 	padding: 2px;
+}
+
+#templates {
+	display: none;
 }
